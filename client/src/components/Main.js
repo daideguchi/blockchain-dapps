@@ -15,7 +15,7 @@ const Main = () => {
       <div className="inputContainer">
         <input type="text" placeholder="アドレス" name="addressTo" />
               <input type="number" placeholder="通貨(ETH)" name="addressTo" step="0.0001" />
-              <button type="button">送信Ï</button>
+              <button type="button">送信</button>
           </div>
     </div>
   );
