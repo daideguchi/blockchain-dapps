@@ -1,5 +1,9 @@
 import { ethers } from "ethers";
+import { createContext } from "react";
 import { contractABI, contractAddress } from "../utils/connect";
+
+
+export const TransactionContext = createContext();
 
 //スマートコントラクトを取得
     const getSmartContract = () => {
@@ -20,3 +24,11 @@ import { contractABI, contractAddress } from "../utils/connect";
         return transactionContract;
     
     };
+
+export const TransactionProvider = ({ children }) => {
+    return (
+        <TransactionContext.Provider value={{ name: "dd1107" }}>
+            {children}
+        </TransactionContext.Provider>
+    );
+};
