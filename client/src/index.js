@@ -7,8 +7,8 @@ import { TransactionProvider } from './context/TransactionContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <TransactionProvider>
-    {/* <React.strictMode> */}
+    <React.StrictMode>
       <App />
-    {/* </React.strictMode> */}
+    </React.StrictMode>
   </TransactionProvider>
 );
